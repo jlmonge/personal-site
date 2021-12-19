@@ -3,14 +3,81 @@ body {
     padding: 0;
 }
 
-.trippy-box {
+.orb1 {
     height: 100px;
     width: 100px;
-    margin: 10px;
+    margin: auto;
+    padding: 10px;
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
+    justify-content: center; /* center */
+    align-items: center;
     background-color: pink;
     color: green;
+    border-radius: 50%;
+    position: relative;
+    animation: orb1-move 6s linear infinite;
+}
+
+@keyframes orb1-move {
+    0% {
+        left: -200px;
+        top: 200px;
+    }
+    25% {
+        left: 0px;
+        top: 0px;
+    }
+    50% {
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 400px;
+    }
+    100% {
+        left: -200px;
+        top: 200px;
+    }
+}
+
+.orb2 {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: green;
+    border-radius: 50%;
+    position: relative;
+    animation: orb2-move 6s linear infinite;
+    transform: translateY(-120px);
+}
+
+@keyframes orb2-move {
+    0% {
+        left: 200px;
+        top: 200px;
+    }
+    25% {
+        left: 0px;
+        top: 400px;
+    }
+    50% {
+        left: -200px;
+        top: 200px;
+    }
+    75% {
+        left: 0px;
+        top: 0px;
+    }
+    100% {
+        left: 200px;
+        top: 200px;
+    }
 }
