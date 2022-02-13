@@ -8,38 +8,67 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--red);
+    background-color: #0f0f0f;
+    color: white;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#header {
-    background-color: var(--sky-blue);
+nav {
+    margin: 0 auto;
+    width: 90%;
+}
+ 
+/* ul and li a borrowed from https://www.w3schools.com/css/css_navbar_vertical.asp */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
 }
 
-#header-to-main-content {
-    z-index: -1;
-    background-color: var(--sky-blue);
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    transform: rotateZ(1.5deg);
+nav ul li {
+    float: none;
+    display: inline-block;
 }
 
-#logo {
-    background-color: var(--yellow);
-    color: blue;
-    height: 15%;
-    margin: auto;
-    animation: revolve 30s linear 3s infinite;
-    width: 35%;
+nav ul li:nth-child(1) {
+    float: left;
 }
 
-#logo::before {
-    content: "jlmonge";
+nav ul li:nth-child(2) {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 36px 40px;
+}
+
+nav ul li a:hover {
+    background-color: white;
     color: black;
-    font-family: 'Grechen Fuemen', cursive;
+}
+
+.logo {
+    background-image: url(/images/static.gif);
+    position: absolute;
+    margin-left: -12.5%;
+    width: 25%;
+    height: 10%;
+    left: 50%;
+    top: 0;
+}
+
+.logo::before {
+    content: "jlmonge";
+    color: var(--yellow);
+    font-family: 'Bebas Neue', cursive;
     text-shadow: 1px 1px black;
     font-size: 3rem;
     height: 100%;
@@ -48,33 +77,17 @@ body {
     justify-content: center;
 }
 
-@keyframes revolve {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(360deg); }
-}
-
-#logo-sw1 {
-    background-color: var(--yellow);
-    width: 20%;
-    height: 4%;
-    border-width: 1px;
-    border-color: black;
-}
-
-#logo-sw2 {
-    background-color: var(--yellow);
-    width: 8%;
-    height: 6%;
-    border-width: 1px;
-    border-color: black;
-}
-
 #main-content {
     padding: 5% 10%;
 }
 
+.divider {
+    
+    height: .1%;
+    width: 100%;
+}
+
 p {
-    color: white;
     font-size: 1.1rem;
     font-weight: 200;
 }
@@ -87,16 +100,11 @@ h1 {
 
 /* section headings (about me, projects, etc.) */
 h2 {
-    border-left: 5px solid;
-    border-image: linear-gradient(to top, black 33%, white 33%, white 66%, black 66%) 1;
-    color: black;
     font-size: 2.5rem;
     font-weight: 700;
-    padding-left: 10px;
 }
 
 h3 {
-    color: black;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -109,24 +117,17 @@ h3 {
 
 .proj-item {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start; /* center along x axis*/
-    gap: 20px;
-}
-
-.proj-item:nth-of-type(odd) {
-    flex-direction: row; /* center along x axis*/
-}
-
-.proj-item:nth-of-type(even) {
-    
-    flex-direction: row-reverse;
+    gap: 0px;
 }
 
 .proj-item img {
     border: 3px solid black;
-    border-radius: 10%;
+    border-radius: 1%;
     display: block;
     opacity: 1;
+    max-width: 50%;
     transition: .5s ease;
 }
 
@@ -135,20 +136,7 @@ h3 {
     filter: blur(3px);
 }
 
-#main-content-to-footer {
-    background-color: var(--tan);
-    z-index: 100;
-    position: relative;
-    top: 3px;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    transform: rotateZ(1.5deg);
-}
-
-#footer {
-    background-color: var(--tan);
-    color: black;
+footer {
     font-size: 1.1rem;
     width: 100%;
     height: 10%;
