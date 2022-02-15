@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --yellow: rgb(255, 242, 0);
     --red: rgb(237,28,36);
@@ -13,56 +17,16 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-nav {
-    margin: 0 auto;
-    width: 90%;
-}
- 
-/* ul and li a borrowed from https://www.w3schools.com/css/css_navbar_vertical.asp */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: right;
-}
-
-nav ul li {
-    float: none;
-    display: inline-block;
-}
-
-nav ul li:nth-child(1) {
-    float: left;
-}
-
-nav ul li:nth-child(2) {
-    float: left;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    font-size: 16px;
-    text-align: center;
+.logo-link {
     text-decoration: none;
-    text-transform: uppercase;
-    padding: 36px 40px;
-}
-
-nav ul li a:hover {
-    background-color: white;
-    color: black;
 }
 
 .logo {
+    margin: 0;
+    padding: 0;
     background-image: url(/images/static.gif);
-    position: absolute;
-    margin-left: -12.5%;
-    width: 25%;
-    height: 10%;
-    left: 50%;
-    top: 0;
+    min-width: 145px;
+    height: 100%;
 }
 
 .logo::before {
@@ -70,11 +34,103 @@ nav ul li a:hover {
     color: var(--yellow);
     font-family: 'Bebas Neue', cursive;
     text-shadow: 1px 1px black;
-    font-size: 3rem;
+    font-size: 53px; /* 6vh*/
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.25rem;
+    display: block;
+    transition: 0.2s ease;
+    height: 7vh;
+    text-align: center;
+}
+
+.nav-links ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.toggle-button {
+    position: absolute;
+    top: 2.8vh;
+    right: 2vh;
+    display: none; /* should only show up on smaller screens */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 765px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 8.7%;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    } 
+    
+    .nav-links li a {
+        padding: 1rem 2rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
 }
 
 #main-content {
@@ -102,38 +158,31 @@ h1 {
 h2 {
     font-size: 2.5rem;
     font-weight: 700;
+    margin: 10px 0px;
 }
 
 h3 {
     font-size: 2rem;
     font-weight: 600;
+    margin: 10px 0px;
 }
 
 .proj-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 .proj-item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start; /* center along x axis*/
-    gap: 0px;
 }
 
 .proj-item img {
-    border: 3px solid black;
     border-radius: 1%;
     display: block;
     opacity: 1;
-    max-width: 50%;
-    transition: .5s ease;
-}
-
-.proj-item img:hover {
-    opacity: 0.25;
-    filter: blur(3px);
+    width: 50%;
 }
 
 footer {
