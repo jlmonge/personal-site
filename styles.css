@@ -5,7 +5,7 @@
 :root {
     --yellow: rgb(255, 242, 0);
     --red: rgb(237,28,36);
-    --sky-blue: rgb(137, 183, 243);
+    --sky-blue: rgb(7, 73, 255);
     --tan: rgb(228,193,137);
 }
 
@@ -42,6 +42,7 @@ body {
 }
 
 nav {
+    margin: 0 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +84,7 @@ nav {
 .toggle-button {
     position: absolute;
     top: 2.8vh;
-    right: 2vh;
+    right: 10%;
     display: none; /* should only show up on smaller screens */
     flex-direction: column;
     justify-content: space-between;
@@ -96,6 +97,7 @@ nav {
     width: 100%;
     background-color: white;
     border-radius: 10px;
+    background-color: var(--yellow);
 }
 
 @media (max-width: 765px) {
@@ -113,18 +115,23 @@ nav {
     .nav-links {
         display: none;
         width: 100%;
-        position: absolute;
-        top: 8.7%;
     }
 
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        width: 40%;
+        width: 25%;
+        background-color: var(--yellow);
     } 
     
     .nav-links li a {
-        padding: 1rem 2rem;
+        text-align: left;
+        float: left;
+        padding: 1rem 2rem 1rem 0.5rem;
+        color: black;
+        width: 100%;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
     }
 
     .nav-links.active {
