@@ -8,6 +8,17 @@ body {
     padding: 0 10%;
     color:white;
     background-color: rgb(96, 0, 108);
+    animation: 1s ease-out pageload;
+}
+@keyframes pageload {
+    0% {
+        background-color: black;
+        opacity: 0;
+    }
+    100% {
+        background-color: rgb(96, 0, 108);
+        opacity: 100%;
+    }
 }
 h1,h2,h3 {
     color: #ffff2e;
@@ -24,7 +35,26 @@ h3 {
 img.headshot {
     width: 20%;
     float: right;
+    margin: 0 0 5% 5%;
 }
+.horiz-line {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 2px;
+    width: 40%;
+    display: flex;
+    animation: 5s linear horiz-line-anim;
+}
+/*@keyframes horiz-line-anim {
+    0% {
+        left: 0px;
+    } 50% {
+        left: 100px;
+    } 100% {
+        left: 0px;
+    }
+}*/
 ul {
     list-style-image: url('/cs110/images/chevron16.png');
 }
@@ -55,4 +85,7 @@ a {
 }
 a:visited {
     color: rgb(137, 137, 137);
+}
+a:hover {
+    color: red;
 }
