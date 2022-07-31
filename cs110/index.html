@@ -4,50 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/cs110.css">
     <title>Welcome to Joseph Monge's Personal Page</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            margin: 5% 10%;
-        }
-        img.headshot {
-            width: 20%;
-            float: right;
-        }
-        p, li {
-            line-height: 2;
-        }
-        body {
-            
-        }
-        table {
-            width: 100%;
-            table-layout: fixed;
-        }
-        td {
-            /*border-style: solid;*/
-        }
-    </style>
 </head>
 <body>
     <div id="start">
-        <img class="headshot" src="/images/IMG_5439-cropped.png" alt="Headshot photo">
+        <img class="headshot" src="images/IMG_5439-cropped.png" alt="Headshot photo">
         <h1>Joseph Monge</h1>
         <h2>B.S. Computer Science @ UCR</h2>
-    </div>
-    <!-- e -->
-    <div id="socials">
-        <ul>
-            <li><a href="https://www.linkedin.com/in/josephlmonge/">Linkedin</a></li>
-            <li><a href="https://github.com/jlmonge">GitHub</a></li>
-        </ul>
     </div>
     <!-- e -->
     <div id="about-me">
         <h3>About Me</h3>
         <p>I graduated from the University of California, Riverside with a B.S. in Computer Science in spring 2022. I am a San Jose native and mostly enjoy anything music. I am interested in cybersecurity and full-stack web development.</p>
     </div>
+    <div class="horiz-line"></div>
     <!-- e -->
     <div id="experience">
         <h3>Work experience</h3>
@@ -68,6 +40,7 @@
             </tr>
         </table>
     </div>
+    <div class="horiz-line"></div>
     <!-- e -->
     <div id="education">
         <h3>Education</h3>
@@ -79,6 +52,7 @@
             </tr>
         </table>
     </div>
+    <div class="horiz-line"></div>
     <!-- e -->
     <div id="coursework">
         <h3>Coursework</h3>
@@ -91,6 +65,7 @@
             <li>Introduction to Software Engineering</li>
         </ul>
     </div>
+    <div class="horiz-line"></div>
     <!-- e -->
     <div id="skills">
         <h3>Skills</h3>
@@ -99,12 +74,13 @@
             <li>Tools: Git/Github, Flask, Design Patterns</li>
         </ul>
     </div>
+    <div class="horiz-line"></div>
     <!-- e -->
-    <div id="project">
+    <div id="projects">
         <h3>Projects</h3>
         <table>
             <tr>
-                <td><a href="https://github.com/jlmonge/Priorities">Priorities - To-Do List App</a></td>
+                <td><a href="https://github.com/jlmonge/Priorities" target="_blank" rel="noopener noreferrer">Priorities - To-Do List App</a></td>
                 <td>April 2021 - June 2021</td>
             </tr>
             <tr>
@@ -117,7 +93,7 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="https://github.com/jlmonge/FlaskDatabaseQuery">In-Memory Database Query</a></td>
+                <td><a href="https://github.com/jlmonge/FlaskDatabaseQuery" target="_blank" rel="noopener noreferrer">In-Memory Database Query</a></td>
                 <td>September 2021 - December 2021</td>
             </tr>
             <tr>
@@ -129,7 +105,7 @@
                 </td>
             </tr>
             <tr>
-                <td><a href="https://github.com/jlmonge/SlidingPuzzleSolver">Puzzle Solver</a></td>
+                <td><a href="https://github.com/jlmonge/SlidingPuzzleSolver" target="_blank" rel="noopener noreferrer">Puzzle Solver</a></td>
                 <td>October 2021 - November 2021</td>
             </tr>
             <tr>
@@ -142,5 +118,18 @@
             </tr>
         </table>
     </div>
+    <!-- e -->
+    <footer>
+        <div id="socials"> <!-- move to footer -->
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/josephlmonge/" target="_blank" rel="noopener noreferrer"><img src="images/Linkedin Logo 64.png" alt="Linkedin logo"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/jlmonge" target="_blank" rel="noopener noreferrer"><img src="images/White Github Logo 64.png" alt="Github logo"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
