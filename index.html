@@ -1,65 +1,144 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Monge | Homepage</title>
+    <meta name="twitter:card" content="summary" />
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Welcome to Joseph Monge's Personal Page" />
+    <meta property="og:description" content="I graduated from the University of California, Riverside with a B.S. in Computer Science in spring 2022." />
+    <meta property="og:image" content="https://jlmonge.github.io/images/IMG_5439-cropped.png" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Source+Sans+Pro:wght@200;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕴️</text></svg>">
-    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <title>Welcome to Joseph Monge's Personal Page</title>
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo-link">
-            <div class="logo"></div>
-        </a>
-        <div class="nav-links">
+    <div id="start">
+        <img class="headshot" src="images/IMG_5439-cropped.png" alt="Headshot photo">
+        <h1>Joseph Monge</h1>
+        <h2>B.S. Computer Science @ UCR</h2>
+    </div>
+    <!-- e -->
+    <div id="about-me">
+        <h3>About Me</h3>
+        <p>I graduated from University of California, Riverside with a B.S. in Computer Science in spring 2022. I am a San Jose native and enjoy anything music. I am most interested in software engineering and full-stack web development.</p>
+    </div>
+     
+    <!-- e -->
+    <div id="experience">
+        <h3>Work experience</h3>
+        <table>
+            <tr>
+                <td>Lockdown v11</td>
+                <td>Team Member</td>
+                <td>April 2021 - June 2021</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        <li>Placed 2nd place overall in a cybersecurity competition against 14 other universities</li>
+                        <li>Coordinated with a team of 6 to fortify Linux, Windows, and web machines in preparation of impending attempts to breach the systems</li>
+                        <li>Corresponded with employees about computer security best practices</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+     
+    <!-- e -->
+    <div id="education">
+        <h3>Education</h3>
+        <table>
+            <tr>
+                <td>B.S. Computer Science
+                <td>University of California, Riverside</td>
+                <td>June 2022</td>
+            </tr>
+        </table>
+    </div>
+     
+    <!-- e -->
+    <div id="coursework">
+        <h3>Coursework</h3>
+        <ul>
+            <li>Software Construction</li>
+            <li>Introduction to Data Science</li>
+            <li>Introduction to Embedded Systems</li>
+            <li>Intermediate Data Structures and Algorithms</li>
+            <li>Design of Operating Systems</li>
+            <li>Introduction to Software Engineering</li>
+        </ul>
+    </div>
+     
+    <!-- e -->
+    <div id="skills">
+        <h3>Skills</h3>
+        <ul>
+            <li>Languages: C/C++, Python, HTML/CSS, JavaScript</li>
+            <li>Tools: Git/Github, Flask, Design Patterns</li>
+        </ul>
+    </div>
+     
+    <!-- e -->
+    <div id="projects">
+        <h3>Projects</h3>
+        <table>
+            <tr>
+                <td><a href="https://github.com/jlmonge/Priorities" target="_blank" rel="noopener noreferrer">Priorities - To-Do List App</a></td>
+                <td>April 2021 - June 2021</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Collaborated with 3 engineers to design and implement a task management system for composing individual and group tasks</li>
+                        <li>Utilized C++ to create classes that represent singular and group tasks and design a concise and aesthetic user interface</li>
+                        <li>Designed a class diagram using UML</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/jlmonge/FlaskDatabaseQuery" target="_blank" rel="noopener noreferrer">In-Memory Database Query</a></td>
+                <td>September 2021 - December 2021</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Cooperated as part of a team of 4 to construct a client-server application using the Flask framework that allows users to add, edit, remove, and search for entries within a database of Kickstarter projects</li>
+                        <li>Utilized the Plotly graphing library to generate descriptive analytics, including a visualization of project failure rate per category</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/jlmonge/SlidingPuzzleSolver" target="_blank" rel="noopener noreferrer">Puzzle Solver</a></td>
+                <td>October 2021 - November 2021</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <ul>
+                        <li>Implemented uniform cost search and A* algorithm with two distinct heuristics</li>
+                        <li>Constructed tests to analyze algorithm efficiency, including time to solve and number of nodes expanded</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- e -->
+    <footer>
+        <div id="socials">
             <ul>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/resume.html">Resume</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/josephlmonge/" target="_blank" rel="noopener noreferrer"><img src="images/Linkedin Logo 64.png" alt="Linkedin logo"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/jlmonge" target="_blank" rel="noopener noreferrer"><img src="images/White Github Logo 64.png" alt="Github logo"></a>
+                </li>
             </ul>
         </div>
-        <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-    </nav>
-    <!-- add navbar -->
-    <!--gifs hyperlinked to the project page (website?) in boxes-->
-    <div id="main-content">
-        <h2>Projects</h2>
-        <div class="proj-container">
-            <div class="proj-item">
-                <h3>Noteworthy</h3>
-                <img src=images/doggos1.gif alt="Project image 1" class="proj-image">
-                <div class="proj-text">
-                    <p>For the musicians</p>
-                </div>
-            </div>
-            <div class="proj-item">
-                <h3>Radius</h3>
-                <img src=images/doggos1.gif alt="Project image 2" class="proj-image">
-                <div class="proj-text">
-                    <p>For the people</p>
-                </div>
-            </div>
-            <div class="proj-item">
-                <h3>PulledPork</h3>
-                <img src=images/doggos1.gif alt="Project image 3" class="proj-image">
-                <div class="proj-text">
-                    <p>For the readers</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <img src="images/Rotating_earth_(large)_transparent.gif" alt="An animation of Earth spinning" style="width:50px;height:50px;">
-    <footer>
+    </footer>
 </body>
 </html>
