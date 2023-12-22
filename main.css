@@ -1,6 +1,8 @@
 :root {
     --lr-padding: 70px;
     --project-border: 3px dashed black;
+    --proj-lr-padding: 0 70px;
+    --responsive-proj-lr-padding: 0 10px;
 }
 
 body {
@@ -10,7 +12,6 @@ body {
     margin: 0;
     color: black;
     background-color: #FFFBEE;
-    animation: 1s ease-out pageload;
 }
 
 .hide {
@@ -26,11 +27,19 @@ h1 {
     padding-left: var(--lr-padding);
 }
 
+h2 {
+    margin: 8px 0;
+}
+
+p {
+    margin: 0;
+}
+
 #intro {
     display: flex;
     align-items: center;
     flex-flow: row wrap;
-    padding: 0 var(--lr-padding);
+    padding: 32px var(--lr-padding);
     gap: 20px 64px;
     margin-bottom: 30px;
 }
@@ -40,7 +49,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     flex: 1 1 0;
-    /* giant font makes things awkward. dealing with it */
+    /* giant parentheses makes things awkward. dealing with it */
     margin-top: -16px;
     margin-left: -10px;
 }
@@ -66,10 +75,6 @@ address {
 
 .contact-text {
     white-space: nowrap;
-}
-
-p {
-    margin: 0;
 }
 
 #employment-status {
@@ -104,8 +109,6 @@ p {
     max-width: 100%;
 }
 
-
-
 .project {
     display: flex;
     flex-direction: column;
@@ -122,19 +125,32 @@ p {
     border-bottom: var(--project-border);
 }
 
+.title {
+    display: flex;
+    padding: var(--proj-lr-padding);
+    cursor: pointer;
+    /* margin-top: 8px; */
+}
+
 .project-body {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.35s ease-in-out;
+    padding: var(--proj-lr-padding);
 }
 
-.toggle:checked+.title+label {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 10px var(--lr-padding);
-    cursor: pointer;
+.toggle:checked+.title+.project-body {
+    max-height: fit-content;
 }
+
+/* .project-desc {
+    margin-bottom: 8px;
+} */
+
+.project-link {
+    color: lime;
+}
+
 
 input[type="checkbox"] {
     display: none;
@@ -143,4 +159,35 @@ input[type="checkbox"] {
 
 input[type=checkbox]:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 517px) {
+    h1 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    /* "kickstarter analytics" is where page starts to break. */
+    #intro {
+        flex-direction: column;
+        padding: 32px 0;
+    }
+
+    #contact-decor {
+        zoom: 0.75;
+        -moz-transform: scale(0.75);
+    }
+
+    #roles {
+        flex-direction: column;
+    }
+
+    .title,
+    .project-body {
+        padding: var(--responsive-proj-lr-padding);
+    }
+
+    .title {
+        justify-content: space-between;
+    }
 }
