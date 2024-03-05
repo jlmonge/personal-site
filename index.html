@@ -8,166 +8,125 @@
     <meta name="twitter:card" content="summary" />
     <meta property="og:url" content="https://jlmonge.github.io" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="joseph -- monge: just a website" />
+    <meta property="og:title" content="joseph -- monge: more than a website" />
     <meta property="og:description" content="Software Engineer" />
     <meta property="og:image" content="https://jlmonge.github.io/images/IMG_5439-cropped.png" />
     <link rel="icon" type="image/x-icon" href="images/slinky.png">
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300&display=swap"
         rel="stylesheet">
-    <title>joseph -- monge: just a website</title>
+    <script src="script.js"></script>
+    <title>joseph -- monge: a website</title>
 </head>
 
 <body>
     <main>
-        <h1>Joseph Monge</h1>
-        <!-- introduction row -->
-        <div id="intro">
-            <div id="contact-decor">
-                <address>
-                    <p class="contact-text">e-mail: <!--
-                        -->jos<span class="hide">example@yahoo.com</span><!--
-                        -->eph@<span class="hide">uhh</span><!--
-                        -->joseph--<span class="hide">uhh</span><!--
-                        -->mon.g<span class="hide">@example.com</span><!--
-                        -->e
-                    </p>
-                    <a href="https://www.linkedin.com/in/josephlmonge/" class="contact-text" target="_blank"
-                        rel="noopener noreferrer">linkedin</a>
-                    <a href="https://github.com/jlmonge" class="contact-text" target="_blank"
-                        rel="noopener noreferrer">github</a>
-                </address>
+        <section class="area">
+            <section class="card">
+                <h1>Joseph Monge</h1>
+                Software Engineer
+            </section>
+            <section class="card">
+                <h2>Programming Languages</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Web Technologies</h2>
+                <ul>
+                    <li>React</li>
+                    <li>Next.js</li>
+                    <li>Vue.js</li>
+                    <li>Flask</li>
+                    <li>SCSS</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Tools</h2>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>Firebase</li>
+                    <li>Linux</li>
+                    <li>Git</li>
+                    <li>Figma</li>
+                    <li>AWS</li>
+                    <li>Vercel</li>
+            </section>
+            <section class="card">
+                <h2>About Me</h2>
+                <ul>
+                    <li>Based in the San Francisco Bay Area</li>
+                    <li>Love music</li>
+                    <li>Graduated w/ B.S. in Computer Science from UC Riverside</li>
+                </ul>
+            </section>
+        </section>
+        <section class="area">
+            <section class="card">
+                <h2>Projects</h2>
+            </section>
+            <article class="card">
+                <h3>
+                    4nderground
+                    <sup class="icon icon--link"></sup>
+                </h3>
+                <ul>
+                    <li>The Internet’s newest music</li>
+                    <li>Role: founder</li>
+                    <li>Used: JavaScript, React, Next.js, SCSS, PostgreSQL</li>
+                    <li>
+                        <a href="https://github.com/jlmonge/4nderground">
+                            <span class="icon icon--gh"></span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <article class="card">
+                <h3>
+                    Hark – Social Audio
+                    <sup class="icon icon--link"></sup>
+                </h3>
+                <ul>
+                    <li>Short-form social audio app</li>
+                    <li>Role: front-end dev</li>
+                    <li>Used: JavaScript, Vue.js, Firebase</li>
+                    <li>
+                        <a href="https://github.com/jlmonge/4nderground">
+                            <span class="icon icon--gh"></span>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="area">
+            <div class="card card--hs">
+                <h2>More of me</h2>
             </div>
-            <div id="employment-status">
-                <p>open to the following roles:</p>
-                <div id="roles">
-                    <div class="role">
-                        <p class="role-name">front-end engineer</p>
-                        <p class="role-skills">(react, vue, css3)</p>
-                    </div>
-                    <div class="role">
-                        <p class="role-name">back-end engineer</p>
-                        <p class="role-skills">(node.js, next.js, python,
-                            postgresql, REST APIs)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- projects -->
-        <div id="projects">
-            <section class="project">
-                <input id="p1" class="toggle" type="checkbox">
-                <label for="p1" class="title">
-                    <h2>4nderground.com</h2>
-                    <span class="project-date">(2023-)</span>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Discover the newest music the Internet has to offer.
-                        Uploads only stay up for 24 hours, so you know it's true.
-                        On registration, everyone gets a random ID to start with some sort of secrecy,
-                        but you can link your socials if you want. Uploads have no artwork,
-                        title, or description — focus totally on the music. Forget the social
-                        media and major label games, this one's for the artists.
-                    </p>
-                    <a href="https://github.com/jlmonge/4nderground" class="project-link" target="_blank"
-                        rel="noopener noreferrer">
-                        GITHUB
-                    </a>
-                    <p class="project-status">Solo effort (so far). Site opening & marketing campaign planned for early
-                        2024.</p>
-                </div>
+            <address class="card card--hs">
+                <h3>Email</h3>
+                joseph@joseph--mon.ge
+            </address>
+            <section class="card card--hs">
+                <h3>GitHub</h3>
+                <a href="#">
+                    jlmonge
+                    <sup class="icon icon--link"></sup>
+                </a>
             </section>
-            <section class="project">
-                <input id="p2" class="toggle" type="checkbox">
-                <label for="p2" class="title">
-                    <h2>Hark Social</h2>
-                    <span class="project-date">(2022)</span>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Designed and built a short-form social audio app using Vue.js as part of a
-                        startup program in France.
-                        Incorporated user registration, friends, and conversation history using Firestore (NoSQL).
-                    </p>
-                    <a href="https://github.com/jlmonge/HarkSocial" class="project-link" target="_blank"
-                        rel="noopener noreferrer">
-                        GITHUB
-                    </a>
-                    <p class="project-status">Abandoned. Built as part of a startup program.</p>
-                </div>
+            <section class="card card--hs">
+                <h3>LinkedIn</h3>
+                <a href="#">
+                    josephlmonge
+                    <sup class="icon icon--link"></sup>
+                </a>
             </section>
-            <section class="project">
-                <input id="p3" class="toggle" type="checkbox">
-                <label for="p3" class="title">
-                    <h2>Shipping Container Manager</h2>
-                    <span>(2022)</span>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Designed an animated user interface, using PyQt, of a program that,
-                        given the position and weight of its shipping containers, can perform and log the following
-                        operations: balance the ship, and transfer containers in and out in as few moves as possible.
-                    </p>
-                    <a href="https://github.com/jlmonge/ShippingContainerManager" class="project-link" target="_blank"
-                        rel="noopener noreferrer">
-                        GITHUB
-                    </a>
-                    <p class="project-status">University project. Team effort.</p>
-                </div>
-            </section>
-            <section class="project">
-                <input id="p4" class="toggle" type="checkbox">
-                <label for="p4" class="title">
-                    <h2>Kickstarter Analytics</h2>
-                    <span>(2021)</span>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Constructed a web app using the Flask framework that allows users to add,
-                        edit, remove, and search a JSON set of Kickstarter projects.
-                        Incorporated the Plotly graphing library allowing users generate and display descriptive
-                        analytics for their data set.
-                    </p>
-                    <a href="https://github.com/jlmonge/GetKickstarterAnalytics" class="project-link" target="_blank"
-                        rel="noopener noreferrer">
-                        GITHUB
-                    </a>
-                    <p class="project-status">University project. Team effort.</p>
-                </div>
-            </section>
-            <section class="project">
-                <input id="p5" class="toggle" type="checkbox">
-                <label for="p5" class="title">
-                    <h2>Sliding Puzzle Solver</h2>
-                    <span>(2021)</spa>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Developed a sliding puzzle solver using Python by implementing uniform cost
-                        search and A* algorithm
-                        with two distinct heuristic functions.
-                    </p>
-                    <a href="https://github.com/jlmonge/SlidingPuzzleSolver" class="project-link">GITHUB</a>
-                    <p class="project-status">University project. Solo effort.</p>
-                </div>
-            </section>
-            <!-- EXAMPLE for copy and paste
-                if this was (js framework) this would be a component!
-            <section class="project">
-                <input id="p2" class="toggle" type="checkbox">
-                <label for="p2" class="title">
-                    <h2>Hark Social</h2>
-                    <span>(2022)</span>
-                </label>
-                <div class="project-body">
-                    <p class="project-desc">Short-form based social audio app.</p>
-                    <a href="https://github.com/jlmonge/HarkSocial" class="project-link" target="_blank" rel="noopener noreferrer">
-                        GITHUB
-                    </a>
-                    <p class="project-status">Abandoned. Built as part of a startup program.</p>
-                </div>
-            </section>
-            -->
-        </div>
+        </section>
     </main>
 </body>
 
