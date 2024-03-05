@@ -6,6 +6,7 @@
 }
 
 body {
+    /* position: relative; */
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
@@ -75,6 +76,27 @@ address {
     font-style: normal;
 }
 
+.loading {
+    filter: invert(1);
+    animation: 0.8s ease-in 1 load;
+    opacity: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes load {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 .area {
     display: flex;
     flex-direction: row;
@@ -82,6 +104,18 @@ address {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.area:nth-of-type(1) {
+    animation: 0.8s ease 1 100ms cards-in backwards;
+}
+
+.area:nth-of-type(2) {
+    animation: 0.8s ease 1 200ms cards-in backwards;
+}
+
+.area:nth-of-type(3) {
+    animation: 0.8s ease 1 300ms cards-in backwards;
 }
 
 .card {
@@ -99,7 +133,19 @@ address {
     box-sizing: border-box;
     min-width: 15em;
     border-color: #7c7c7c;
-    transition: all 0.2s ease-out;
+    transition: all 0.2s ease-in;
+}
+
+@keyframes cards-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10%)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .card:first-child {
