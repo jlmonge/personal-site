@@ -27,6 +27,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    text-align: center;
 }
 
 a {
@@ -37,6 +38,8 @@ a,
 a:visited {
     color: inherit;
     text-decoration: inherit;
+    opacity: 1;
+    transition: opacity 0.2s;
 }
 
 a:hover {
@@ -77,6 +80,7 @@ address {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
 }
 
@@ -108,6 +112,10 @@ address {
     border-color: #FFFFFF;
     align-items: center;
     justify-content: flex-end;
+}
+
+.hide {
+    display: none;
 }
 
 /* .card:last-child {
